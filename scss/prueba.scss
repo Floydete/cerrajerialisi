@@ -1,0 +1,21 @@
+@import url('http://fonts.cdnfonts.com/css/palace-script-mt');
+@import "footer";
+@import "variables";
+@import "header";
+@import "precios";
+@import "nosotros";
+@import "contacto";
+@import "servicios";
+@import "index";
+@import "404";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+body {
+    background: url(../multimedia/fondo.jpg);
+    background-repeat: repeat;
+}
+
+
+@import "mediaquery";

@@ -1,0 +1,64 @@
+/*CONTACTO.HTML*/
+
+.conTacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    line-height: 2rem;
+    color: white;
+}
+
+.conTacto__tiTulo {
+    margin: auto;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+}
+
+.formUlario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1.1rem;
+    margin: auto;
+    background: linear-gradient(to top, #0000003b, #4343437e);
+    border-radius: 1rem;
+}
+
+fieldset {
+    border-radius: 2rem;
+}
+
+.texTarea {
+    width: 90%;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.formUlario__inFoContacto {
+    margin: auto;
+    padding: 5% 0;
+}
+
+.formUlario__inFoContacto input {
+    border-radius: 0.5rem;
+    margin: 0 0.3rem;
+}
+
+.form-select {
+    width: 45%;
+    height: 2rem;
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+}
+
+.archivo {
+    margin-bottom: 2rem;
+}
+
+.btn-outline-warning {
+    margin-bottom: 3rem;
+    padding: 0.5em 1.5rem;
+}

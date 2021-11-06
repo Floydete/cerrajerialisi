@@ -1,0 +1,207 @@
+/*-------------------------*/
+/*SERVICIOS.HTML*/
+.menuServicios {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+}
+
+.serVicios {
+    margin-top: 5%;
+    display: grid;
+    width: 70%;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0.1rem;
+    grid-column-gap: 0.1rem;
+}
+
+.serVicios div {
+    display: grid;
+    align-items: end;
+    position: relative;
+}
+
+.serVicios a {
+    display: grid;
+    position: relative;
+}
+
+.abajo {
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    padding: 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+
+
+/*---------------------------------------*/
+
+/*PRODUCTOS*/
+
+.proDuctos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    border: solid 1px white;
+    border-radius: 3%;
+    background-image: linear-gradient(to top, #00000038, #43434367);
+
+    .proDuctos__tiTulo {
+        font-size: 1.5rem;
+        margin-top: 5%;
+        text-decoration: underline;
+        color: white;
+    }
+
+    .proDuctos__galeRia {
+        margin: 5%;
+        list-style-type: none;
+        line-height: 3.5rem;
+
+        li {
+            display: flex;
+            margin-left: 25%;
+            padding-left: 8%;
+            background-image: url(../multimedia/iconito.png);
+            background-position: left;
+            background-repeat: no-repeat;
+
+            a {
+                color: white;
+            }}}}
+
+
+/*TELEMANDOS.HTML*/
+
+.teleMandos {
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 0;
+}
+
+.border {
+    display: flex;
+    margin: .3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row {
+    margin: 1%;
+}
+
+.marCas {
+    margin: 5% auto;
+}
+
+
+/*------------------*/
+
+/*TAMBOR.HTML*/
+
+.secTion__taMbor {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.secTion__taMbor__tiTulo--teXto {
+    color: white;
+    font-size: 1.3rem;
+    margin: 2% auto 1%;
+
+}
+
+.tiTulo__taMbor__imaGen {
+    width: 50%;
+    margin: auto;
+}
+
+/*LLAVES CODIFICADAS.HTML*/
+
+.tiTulo__coPias__imaGen {
+    width: 50%;
+}
+
+
+.secTion__copPias__tiTulo--teXto {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+/*CARCASAS.HTML*/
+
+.secTion__carCasas{
+.tiTulo__carCasas__imaGen {
+        width: 50%;}    
+.secTion__carCasas__tiTulo{
+
+.secTion__carCasas__tiTulo--blAnco {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1% 0;}
+
+}}
+
+/*CONTROLES REMOTO*/
+
+.secTion__reMotos{
+    .tiTulo__reMotos__imaGen {
+        width: 50%;
+}
+.secTion__reMotos__tiTulo--blAnco {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1% 0;
+}}
+
+/*ADAPTACION NAVAJA.HTML */
+
+.secTion__adapTaciones{
+    .secTion__adapTaciones__imaGen {
+        width: 55%;}
+.secTion__adapTaciones__tiTulo--teXto {
+    color: white;
+    padding-top: 1%;
+    font-size: 1.4rem;
+}}
+
+
+
+
+/*PERDIO SUS LLAVES.HTML*/
+
+.secTion__ceroLlave__tiTulo--teXto {
+    color: white;
+    padding-top: 1%;
+    font-size: 1.4rem;
+}
+
+.tiTulo_ceroLlave__imaGen {
+    width: 55%
+}
+
+
+/*LEVANTAVIDRIOS.HTML*/
+
+.secTion__levantAvidrios__tiTulo--teXto {
+    color: white;
+    padding-top: 1%;
+    font-size: 1.4rem;
+}
+
+.tiTulo__levantAvidrios__imaGen {
+    width: 55%
+}

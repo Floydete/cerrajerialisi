@@ -1,0 +1,987 @@
+/*MEDIA QUERY*/
+
+/* TAMAÑO DESDE IPHONE PLUS */
+/* TAMAÑO CELULAR*/
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+    .container_preguntas {
+      display: none; }
+    .caja1 {
+      display: grid;
+      height: auto;
+      width: 54%;
+      padding-right: 15%; }
+    .loGo {
+      display: grid;
+      margin: none;
+      font-size: 1.4rem;
+      color: white; }
+    .loGo2 {
+      display: grid;
+      color: white;
+      font-size: .5rem;
+      text-decoration: overline; }
+    .carousel-inner {
+      width: 100%;
+      margin: auto; }
+    .listaFooter {
+      display: none; }
+    .serVicios {
+      grid-template-columns: 1fr; }
+    .googleMaps #ubicacion {
+      width: 100%;
+      height: 30vh; }
+    .googleMaps .doNde {
+      width: 100%;
+      font-size: .8rem; }
+    .direCcion {
+      margin: auto;
+      height: 100%;
+      font-size: .5rem;
+      line-height: .1rem; }
+    .loGos {
+      justify-content: center; }
+    .logoface {
+      width: 57px;
+      height: auto;
+      left: .8rem;
+      position: relative;
+      top: 0.34rem; }
+    .logoig {
+      width: 37px; }
+    .logoli {
+      width: 36px; }
+    .logowhat {
+      width: 31px; }
+    .col-sm-6 {
+      width: 40%;
+      height: auto; }
+    .img-fluid {
+      width: auto;
+      height: auto; }
+    .cartaNegra {
+      width: 100%; }
+      .cartaNegra .cartaNegra__sectorIzquierdo p {
+        display: flex;
+        font-size: .9rem;
+        margin-bottom: 3%;
+        line-height: 1rem; }
+      .cartaNegra .cartaNegra__sectorIzquierdo h1 {
+        font-size: 1rem;
+        margin-top: .5rem; }
+      .cartaNegra .cartaNegra__sectorIzquierdo .cartaNegra__sectorIzquierdo__aÑo {
+        font-size: 4.3rem;
+        line-height: 3.9rem; }
+      .cartaNegra .cartaNegra__sectorDerecho p {
+        font-size: .7rem;
+        margin-bottom: 0%;
+        line-height: normal; }
+        .cartaNegra .cartaNegra__sectorDerecho p .casaLisi {
+          color: #c9940e;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bold;
+          font-size: .7rem;
+          justify-items: center; }
+      .cartaNegra .cartaNegra__sectorDerecho .cartaNegra__sectorDerecho__titulo {
+        font-size: .9rem;
+        padding-bottom: .1em;
+        padding-top: .2em;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 1rem; }
+    footer {
+      display: grid;
+      width: 100%;
+      background: linear-gradient(#000000, #434343);
+      grid-template-columns: 1fr;
+      justify-items: center; }
+    .Dire {
+      padding-top: 2%;
+      font-size: .6rem;
+      color: white;
+      text-align: center; }
+    /*LISTA PRECIOS*/
+    .tablita {
+      display: flex;
+      justify-content: center; }
+      .tablita table {
+        font-size: .5rem;
+        width: 70%;
+        border-collapse: separate;
+        border-spacing: .3rem;
+        text-align: center;
+        margin-bottom: 15%;
+        margin-top: 3%; }
+    .listaPrecios {
+      font-size: 1rem;
+      margin-top: 5%; }
+    .tiTulo {
+      padding: 0.3rem; }
+    .tiTulo th {
+      padding: 0.4rem; }
+    /* CONTACTO.HTML responsive*/
+    .conTacto {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2%;
+      line-height: 2rem;
+      color: white; }
+    .conTacto__tiTulo {
+      margin: auto;
+      padding-bottom: 1%;
+      font-size: 1.5rem; }
+    .formUlario {
+      width: 90%; }
+    .archivo {
+      margin: auto;
+      margin-bottom: 5%;
+      width: 90%; }
+    .texTarea {
+      width: 90%; }
+    .formUlario__inFoContacto input {
+      width: 50%; }
+    .form-select {
+      width: 50%; }
+    /*PRODUCTOS HTML */
+    .proDuctos {
+      display: flex;
+      flex-direction: none;
+      width: 90%;
+      margin-top: 18%;
+      margin-bottom: 33%;
+      border: solid .8px white; }
+      .proDuctos .proDuctos__tiTulo {
+        margin-top: 5%;
+        text-decoration: underline;
+        color: white; }
+        .proDuctos .proDuctos__tiTulo h2 {
+          font-size: 1.2rem; }
+      .proDuctos .proDuctos__galeRia {
+        margin: 5%;
+        list-style-type: none;
+        line-height: none; }
+        .proDuctos .proDuctos__galeRia li {
+          display: flex;
+          margin-left: 8%;
+          padding-left: 15%; }
+          .proDuctos .proDuctos__galeRia li a {
+            font-size: 1.1rem;
+            color: white; }
+    /*NOSOTROS HTML*/
+    /* @each $var in list {} */
+    .NosoTros {
+      width: 90%;
+      margin-top: 5%; }
+      .NosoTros .NosoTros__hisToria h3 {
+        font-size: .7rem;
+        letter-spacing: 0.1rem;
+        line-height: 1rem; }
+        .NosoTros .NosoTros__hisToria h3 .NosoTros__Distincion {
+          color: goldenrod;
+          font-size: .9rem; }
+        .NosoTros .NosoTros__hisToria h3 .NosoTros__Distincion2 {
+          font-size: .7rem;
+          color: #7eb69d;
+          margin: 3% 0; }
+    /*LLAVES CODIFICADAS*/
+    .secTion__coPias .tiTulo__coPias__imaGen {
+      width: 95%; }
+    .secTion__coPias .secTion__copPias__tiTulo .secTion__copPias__tiTulo--teXto {
+      font-size: .9rem;
+      padding-top: 2%; }
+    /*CARCASAS*/
+    .secTion__carCasas .tiTulo__carCasas__imaGen {
+      width: 95%; }
+    .secTion__carCasas .secTion__carCasas__tiTulo .secTion__carCasas__tiTulo--blAnco {
+      font-size: .8rem;
+      padding: 2% 0; }
+    /*CONTROLES REMOTO*/
+    .secTion__reMotos .tiTulo__reMotos__imaGen {
+      width: 90%;
+      padding-bottom: 2%; }
+    .secTion__reMotos .secTion__reMotos__tiTulo--blAnco {
+      font-size: .9rem;
+      padding-bottom: 2%; }
+    /*ADAPTACION NAVAJA.HTML */
+    .secTion__adapTaciones .secTion__adapTaciones__imaGen {
+      width: 90%; }
+    .secTion__adapTaciones .secTion__adapTaciones__tiTulo .secTion__adapTaciones__tiTulo--teXto {
+      padding-top: 1%;
+      font-size: 1rem;
+      padding-bottom: 1rem; }
+    /*PERDIO SUS LLAVES.HTML*/
+    .secTion__ceroLlave__tiTulo--teXto {
+      padding-top: 5%;
+      font-size: 1rem;
+      padding-bottom: 2%; }
+    .tiTulo_ceroLlave__imaGen {
+      width: 90%;
+      margin-bottom: 8%; }
+    /*LEVANTAVIDRIOS.HTML*/
+    .secTion__levantAvidrios__tiTulo--teXto {
+      padding-bottom: 2%;
+      padding-top: 5%;
+      font-size: 1rem; }
+    .tiTulo__levantAvidrios__imaGen {
+      width: 90%;
+      margin-bottom: 8%; }
+    /*TAMBOR.HTML*/
+    .secTion__taMbor__tiTulo--teXto {
+      font-size: 1rem;
+      padding-bottom: 2%;
+      padding-top: 5%; }
+    .tiTulo__taMbor__imaGen {
+      width: 90%;
+      margin-bottom: 8%; } }
+
+
+
+
+
+/*-----------------------------------*/
+
+/* TAMAÑO CELULAR*/
+@media only screen and (max-width:736px) and (min-width: 414px) {
+
+    /*INDEX HTML*/
+
+    /* .caja1 {
+        width: 30%;
+
+        .loGo {
+            width: 80%;
+
+        }
+    } */
+
+    .container_preguntas {
+        display: none;
+    }
+
+    .caja1 {
+        display: grid;
+        height: auto;
+        width: 30%;
+        align-items: center;
+
+        margin-bottom: 0;
+    }
+
+    .loGo {
+        display: grid;
+        margin: auto;
+        font-size: 1.5rem;
+        color: white;
+        /* line-height: .4rem; */
+
+
+    }
+
+    .loGo2 {
+        display: grid;
+        color: white;
+        font-size: .6rem;
+        text-decoration: overline
+    }
+
+    .carousel-inner {
+        width: 100%;
+        margin: auto;
+    }
+
+    .listaFooter {
+        display: none;
+    }
+
+    .serVicios {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .googleMaps {
+        #ubicacion {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .doNde {
+            width: 100%;
+            font-size: .8rem;
+        }
+    }
+
+    .direCcion {
+        margin: auto;
+        height: 100%;
+        font-size: .5rem;
+        line-height: .1rem;
+    }
+
+    .loGos {
+        justify-content: center;
+    }
+
+    .logoface {
+        width: 57px;
+        height: auto;
+        left: .8rem;
+        position: relative;
+        top: 0.34rem;
+    }
+
+    .logoig {
+        width: 37px;
+    }
+
+    .logoli {
+        width: 36px;
+    }
+
+    .logowhat {
+        width: 31px;
+    }
+
+    .col-sm-6 {
+        width: 40%;
+        height: auto;
+    }
+
+    .img-fluid {
+        width: auto;
+        height: auto;
+    }
+
+    .cartaNegra {
+        width: 100%;
+
+        .cartaNegra__sectorIzquierdo {
+
+            & p {
+                display: flex;
+                font-size: .9rem;
+                margin-bottom: 3%;
+                line-height: 1rem;
+            }
+
+            & h1 {
+                font-size: 1rem;
+                margin-top: .5rem;
+            }
+
+            .cartaNegra__sectorIzquierdo__aÑo {
+                font-size: 4.3rem;
+                line-height: 3.9rem;
+
+            }
+        }
+
+        .cartaNegra__sectorDerecho {
+
+            & p {
+                font-size: .7rem;
+                margin-bottom: 0%;
+                line-height: normal;
+
+                .casaLisi {
+                    color: rgb(201, 148, 14);
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-weight: bold;
+                    font-size: .7rem;
+                    justify-items: center;
+                }
+            }
+
+            .cartaNegra__sectorDerecho__titulo {
+                font-size: .9rem;
+                padding-bottom: .1em;
+                padding-top: .2em;
+                margin-bottom: 0;
+                margin-top: 0;
+                line-height: 1rem;
+
+
+            }
+        }
+    }
+
+
+    footer {
+        display: grid;
+        width: 100%;
+        background: linear-gradient(#000000, #434343);
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .Dire {
+        padding-top: 2%;
+        font-size: .6rem;
+        color: white;
+        text-align: center;
+    }
+
+    /*LISTA PRECIOS*/
+
+    .tablita {
+        display: flex;
+        justify-content: center;
+
+        table {
+            font-size: .5rem;
+            width: 70%;
+            border-collapse: separate;
+            border-spacing: .3rem;
+            text-align: center;
+            margin-bottom: 15%;
+            margin-top: 3%;
+        }
+    }
+
+    .listaPrecios {
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+
+    .tiTulo {
+        padding: 0.3rem;
+    }
+
+    .tiTulo th {
+        padding: 0.4rem;
+    }
+
+    /* CONTACTO.HTML responsive*/
+    .conTacto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        line-height: 2rem;
+        color: white;
+    }
+
+    .conTacto__tiTulo {
+        margin: auto;
+        padding-bottom: 1%;
+        font-size: 1.5rem;
+    }
+
+    .formUlario {
+        width: 90%;
+    }
+
+    .archivo {
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+    .texTarea {
+        width: 90%;
+    }
+
+    .formUlario__inFoContacto input {
+        width: 50%;
+    }
+
+
+    .form-select {
+        width: 50%;
+    }
+
+    /*PRODUCTOS HTML */
+
+    .proDuctos {
+        display: flex;
+        flex-direction: none;
+        width: 90%;
+        margin-top: 18%;
+        margin-bottom: 33%;
+        border: solid .8px white;
+
+        .proDuctos__tiTulo {
+            margin-top: 5%;
+            text-decoration: underline;
+            color: white;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .proDuctos__galeRia {
+            margin: 5%;
+            list-style-type: none;
+            line-height: none;
+
+            li {
+                display: flex;
+                margin-left: 8%;
+                padding-left: 15%;
+
+                a {
+                    font-size: 1.1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    /*NOSOTROS HTML*/
+    /* @each $var in list {} */
+
+    .NosoTros {
+        width: 90%;
+        margin-top: 5%;
+
+        .NosoTros__hisToria h3 {
+            font-size: .7rem;
+            letter-spacing: 0.1rem;
+            line-height: 1rem;
+
+            .NosoTros__Distincion {
+                color: goldenrod;
+                font-size: .9rem;
+            }
+
+            .NosoTros__Distincion2 {
+                font-size: .7rem;
+                color: rgb(126, 182, 157);
+                margin: 3% 0;
+            }
+
+        }
+    }
+
+    /*LLAVES CODIFICADAS*/
+    .secTion__coPias {
+        .tiTulo__coPias__imaGen {
+            width: 95%;
+        }
+
+        .secTion__copPias__tiTulo {
+            .secTion__copPias__tiTulo--teXto {
+                font-size: .9rem;
+                padding-top: 2%;
+
+            }
+        }
+    }
+
+    /*CARCASAS*/
+    .secTion__carCasas {
+        .tiTulo__carCasas__imaGen {
+            width: 95%;
+        }
+
+        .secTion__carCasas__tiTulo {
+            .secTion__carCasas__tiTulo--blAnco {
+                font-size: .8rem;
+                padding: 2% 0;
+            }
+        }
+    }
+
+    /*CONTROLES REMOTO*/
+    .secTion__reMotos {
+        .tiTulo__reMotos__imaGen {
+            width: 90%;
+            padding-bottom: 2%;
+        }
+
+        .secTion__reMotos__tiTulo--blAnco {
+
+            font-size: .9rem;
+            padding-bottom: 2%;
+        }
+    }
+
+
+    /*ADAPTACION NAVAJA.HTML */
+
+    .secTion__adapTaciones {
+        .secTion__adapTaciones__imaGen {
+            width: 90%;
+        }
+
+        .secTion__adapTaciones__tiTulo {
+            .secTion__adapTaciones__tiTulo--teXto {
+                padding-top: 1%;
+                font-size: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    /*PERDIO SUS LLAVES.HTML*/
+
+    .secTion__ceroLlave__tiTulo--teXto {
+
+        padding-top: 5%;
+        font-size: 1rem;
+        padding-bottom: 2%;
+
+    }
+
+    .tiTulo_ceroLlave__imaGen {
+        width: 90%;
+        margin-bottom: 8%;
+
+    }
+
+    /*LEVANTAVIDRIOS.HTML*/
+
+    .secTion__levantAvidrios__tiTulo--teXto {
+        padding-bottom: 2%;
+        padding-top: 5%;
+        font-size: 1rem;
+    }
+
+    .tiTulo__levantAvidrios__imaGen {
+        width: 90%;
+        margin-bottom: 8%;
+    }
+
+    /*TAMBOR.HTML*/
+
+
+    .secTion__taMbor__tiTulo--teXto {
+
+        font-size: 1rem;
+        padding-bottom: 2%;
+        padding-top: 5%;
+
+    }
+
+    .tiTulo__taMbor__imaGen {
+        width: 90%;
+        margin-bottom: 8%;
+    }
+}
+
+/*---------------------------------------------------------------*/
+
+
+
+/*TAMAÑO TABLET*/
+
+@media only screen and (max-width:1024px) and (min-width: 721px) {
+
+    /*INDEX.HTML*/
+
+    /*  .caja1 {
+        width: 25%;
+
+        .loGo {
+            width: 70%;
+
+        }
+    } */
+    .container_preguntas {
+        display: none;
+    }
+
+    .caja1 {
+        display: grid;
+        width: 25%;
+
+
+
+    }
+
+    .loGo {
+        display: grid;
+        margin: auto;
+        font-size: 2rem;
+        color: white;
+
+    }
+
+    .loGo2 {
+        display: grid;
+        color: white;
+        font-size: .7rem;
+        text-decoration: overline;
+        line-height: .5rem;
+    }
+
+    .carousel-inner {
+        width: 80%;
+        margin: auto;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+
+    .cartaNegra__sectorIzquierdo__aÑo {
+        font-size: 5.5rem;
+         }
+
+    .cartaNegra {
+        width: 80%;
+    }
+
+    .listaFooter {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        background: linear-gradient(to top, #000000, #434343);
+        color: white;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 12vh;
+    }
+
+    .loGos {
+        display: flex;
+        margin: auto;
+        padding-right: 1.5rem;
+    }
+
+    .googleMaps {
+        #ubicacion {
+            width: 80%;
+            height: 30vh;
+        }
+
+        .doNde {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 80%;
+        }
+    }
+
+
+
+    .direCcion {
+        justify-items: right;
+        background: none;
+        padding-bottom: .8rem;
+    }
+
+    .Dire {
+        font-size: .9rem;
+    }
+
+    /*LISTA PRECIOS*/
+    .listaPrecios {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+
+    .tablita {
+        display: flex;
+        justify-content: center;
+
+        table {
+            font-size: .5rem;
+            width: 70%;
+            border-collapse: separate;
+            border-spacing: .5rem;
+            text-align: center;
+            margin-bottom: 8%;
+            margin-top: 2%;
+        }
+    }
+
+    .tiTulo {
+        padding: 0.5rem;
+    }
+
+    .tiTulo th {
+        padding: 0.6rem;
+    }
+
+    /* CONTACTO.HTML*/
+    .conTacto {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+        margin-top: 2%;
+        line-height: 2rem;
+        color: white;
+    }
+
+    .laBel {
+        width: 30%;
+    }
+
+    .conTacto__tiTulo {
+        margin: auto;
+        padding-bottom: 1%;
+        font-size: 1.5rem;
+    }
+
+    .formUlario {
+        width: 65%;
+    }
+
+    .archivo {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .texTarea {
+        width: 75%;
+    }
+
+    .formUlario__inFoContacto input {
+        width: 60%;
+    }
+
+    .form-select {
+        width: 50%;
+    }
+
+    /*SERVICIOS RESPONSIVE TABLETA*/
+    .menuServicios {
+        display: grid;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .serVicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .abajo {
+        display: grid;
+    }
+
+    /*PRODUCTOS HTML */
+
+    .proDuctos {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    .proDuctos__galeRia {
+        margin: 5%;
+        list-style-type: none;
+        line-height: 3.5rem;
+
+        li {
+            display: flex;
+            margin-left: 15%;
+            padding-left: 15%;
+        }
+    }
+
+    /*NOSOTROS HTML*/
+
+    .NosoTros {
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .NosoTros__hisToria h3 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2rem;
+    }
+
+
+    /*LLAVES CODIFICADAS*/
+    .tiTulo__coPias__imaGen {
+        width: 85%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+
+    /*CARCASAS*/
+
+    .secTion__carCasas {
+        .tiTulo__carCasas__imaGen {
+            width: 85%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .secTion__carCasas__tiTulo--blAnco {
+            margin-top: 1%;
+            font-size: 1.2rem;
+        }
+    }
+
+    /*CONTROLES REMOTO*/
+
+    .secTion__reMotos {
+        .tiTulo__reMotos__imaGen {
+            width: 85%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+        }
+
+        .secTion__reMotos__tiTulo--blAnco {
+            margin-top: 1%;
+            font-size: 1.2rem;
+
+        }
+    }
+
+
+
+    /*ADAPTACION NAVAJA.HTML */
+
+    .secTion__adapTaciones {
+        .secTion__adapTaciones__imaGen {
+            width: 85%;
+        }
+
+        .secTion__adapTaciones__tiTulo {
+            .secTion__adapTaciones__tiTulo--teXto {
+                padding-top: 1%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+    /*PERDIO SUS LLAVES.HTML*/
+
+    .secTion__ceroLlave__tiTulo--teXto {
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1.2rem;
+    }
+
+    .tiTulo_ceroLlave__imaGen {
+        width: 85%;
+        margin-bottom: 5%;
+
+    }
+
+    /*LEVANTAVIDRIOS.HTML*/
+
+    .secTion__levantAvidrios__tiTulo--teXto {
+        padding-bottom: 2%;
+        padding-top: 2%;
+        font-size: 1.2rem;
+    }
+
+    .tiTulo__levantAvidrios__imaGen {
+        width: 85%;
+        margin-bottom: 5%;
+    }
+
+    /*TAMBOR.HTML*/
+    @at-root .secTion__taMbor__tiTulo--teXto {
+
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+    }
+
+    .tiTulo__taMbor__imaGen {
+        width: 85%;
+        margin-bottom: 5%;
+    }
+
+}

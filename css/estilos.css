@@ -1,0 +1,899 @@
+body {
+    background: url(../multimedia/fondo.jpg);
+    background-repeat: repeat;
+}
+
+/*NAVEGADOR*/
+
+.faDe {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: .4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+header {
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.colorNav {
+    background-image: linear-gradient(to bottom, #ff4b1f, #f57a4e);
+    /* height:10vh ; */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #F7931E;
+}
+
+.caja1 {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.loGo {
+    width: 55%;
+    animation: stretch;
+    animation-duration: 1.5s;
+    animation-duration: 3s;
+}
+
+/*EFECTO LOGO*/
+@keyframes stretch {
+    0% {
+        transform: scale(.6)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.naveGador li {
+    margin-left: 2.6%;
+}
+
+.suBmenu li:hover {
+    color: rgba(236, 212, 76, 0.829);
+    background-color: rgb(37, 36, 36);
+    border-radius: 0.4rem;
+}
+
+.suBmenu {
+    position: absolute;
+    display: none;
+}
+
+.suBmenu li {
+    display: block;
+    background-color: rgba(128, 128, 128, 151);
+    padding: 0.6rem 0.6rem;
+    color: honeydew;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.naveGador li:hover ul {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    word-spacing: 1rem;
+}
+
+/*MAIN*/
+main {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*FOOTER*/
+
+footer {
+    display: grid;
+    background: linear-gradient(#000000, #434343);
+    color: white;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+   
+}
+
+.direCcion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 245, 245);
+    margin-top: 3%;
+    align-items: center;    
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.Dire {
+    align-items: center;
+    line-height: .65rem;   
+    margin: auto;
+    font-size: 1.1rem;
+    
+}
+.listaFooter {
+    display: grid;
+    line-height: 1.1rem;
+    justify-content: center;
+    margin-top: .9rem;
+    
+}
+
+.listaFooter a {
+    font-size: .8rem;
+    color: rgb(226, 182, 60);
+    letter-spacing: .2rem;
+}
+
+.listaFooter a:hover{
+    color: papayawhip;
+}
+
+.loGos {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+}
+
+.loGos article {
+    display: flex;
+    align-items: center;
+    padding-right: 6%;
+}
+
+.logoface:hover {
+    transform: scale(1.1);
+}
+
+.logoig:hover {
+    transform: scale(1.1);
+}
+
+.logoli:hover {
+    transform: scale(1.1);
+}
+
+.logowhat:hover {
+    transform: scale(1.1);
+}
+
+.logoface {
+    width: 72px;
+    height: auto;
+    left: 0.9rem;
+    position: relative;
+    top: 0.36rem;
+}
+
+.logoig {
+    width: 46px;
+}
+
+.logoli {
+    width: 46px;
+}
+
+.logowhat {
+    width: 39px;
+}
+
+/*--------------------------------------------*/
+/*INDEX.HTML*/
+
+.nosoTros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    width: 55%;
+    padding: 1% 0;
+    color: white;
+}
+
+.izquIerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    font-size: 1.2rem;
+    height: 100%;
+    line-height: 1.5rem;
+}
+
+.deRecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    padding: 0 2% 0 2%;
+    line-height: 1.2rem;
+}
+
+.deRecha h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.textoNaranja {
+    color: #ffffff;
+    font-size: 85pt;
+    line-height: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 3%;
+}
+
+span {
+    color: #F16313;
+}
+
+/*MENU*/
+
+.carousel-inner {
+    width: 55%;
+    margin: auto;
+
+}
+
+.carousel-item {
+    width: 100%;
+
+}
+
+/*MAPA*/
+
+#ubicacion {
+    width: 55%;
+    height: 55vh;
+}
+
+.doNde {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 1.3rem;
+    width: 55%;
+    background: url(../multimedia/Fondos-web.jpg);
+    margin: auto;
+    padding: 0.6% 0 0.6% 0;
+    letter-spacing: 0.1rem;
+}
+
+/*----------------------------------------*/
+/*NOSOTROS.HTML*/
+
+.gridNosotros {
+    width: 45%;
+    height: auto;
+    display: grid;
+    margin: auto;
+    margin-bottom: 5%;
+    border: solid 1px rgba(245, 245, 245, 0.719);
+    border-radius: 1rem;
+    row-gap: 2px;
+    column-gap: 2px;
+
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        " foto1 foto1 foto1"
+        " video video video "
+        " foto2 foto3 foto4 "
+        "historia historia historia";
+}
+
+.foTo1 {
+    grid-area: foto1;
+    border-radius: 1rem;
+}
+
+.viDeo {
+    grid-area: video;
+    width: 100%;
+    height: 45vh;
+    }
+
+.foTo2 {
+    width: 100%;
+    height: 100%;
+     grid-area: foto2;
+    
+}
+
+.foTo3 {
+    grid-area: foto3;
+    
+}
+
+.foTo4 {
+    grid-area: foto4;
+    
+}
+
+
+
+.hisToria {
+    display: grid;
+    grid-area: historia;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 1rem;
+    padding: 2%;
+}
+
+.hisToria h3 {
+    display: grid;
+    font-size: 1.1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(223, 193, 112);
+    letter-spacing: 0.2rem;
+    line-height: 1.3rem;
+}
+
+/*--------------------------------------------*/
+/* PRECIOS.HTML*/
+
+/*TABLA*/
+table {
+    width: 40%;
+    text-align: center;
+    background-color: rgba(255, 245, 191, 0.233);
+    border-radius: 1.5rem;
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    border: solid 2px rgba(134, 132, 21, 0.795);
+    margin-bottom: 4%;
+    border-collapse: separate;
+    border-spacing: .8rem;
+}
+
+table td {
+    background-color: white;
+    color: green;
+    border-radius: 0.5rem;
+}
+
+.tiTulo {
+    color: rgba(139, 91, 91, 0.884);
+    font-weight: bold;
+    background-color: rgb(255, 250, 250);
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+}
+
+.tiTulo th {
+    color: rgb(255, 253, 253);
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+
+.listaPrecios {
+    text-decoration-line: underline;
+    font-size: 1.5rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tablita {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------------------------------*/
+/*CONTACTO.HTML*/
+
+.conTacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    line-height: 2rem;
+    color: white;
+}
+
+.consulta {
+    margin: auto;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+}
+
+.inPut {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1.1rem;
+    margin: auto;
+    background: linear-gradient(to top, #0000003b, #4343437e);
+    border-radius: 1rem;
+}
+
+fieldset {
+    border-radius: 2rem;
+}
+
+.texTarea {
+    width: 90%;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.tiPo {
+    margin: auto;
+    padding: 5% 0;
+}
+
+.tiPo input {
+    border-radius: 0.5rem;
+    margin: 0 0.3rem;
+}
+
+.form-select {
+    width: 45%;
+    height: 2rem;
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+}
+
+.archivo {
+    margin-bottom: 2rem;
+}
+
+.btn-outline-warning {
+    margin-bottom: 3rem;
+    padding: 0.5em 1.5rem;
+}
+
+/*-------------------------*/
+/*SERVICIOS.HTML*/
+.menuServicios {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+}
+
+.serVicios {
+    margin-top: 5%;
+    display: grid;
+    width: 70%;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0.1rem;
+    grid-column-gap: 0.1rem;
+}
+.serVicios div {
+    display: grid;
+    align-items: end;
+    position: relative;
+}
+
+.serVicios a {
+    display: grid;
+    position: relative;
+}
+
+.abajo {
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    padding: 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+}
+/*MEDIA QUERY*/
+
+/* TAMAÑO CELULAR*/
+@media only screen and (max-width:736px) and (min-width: 414px) {
+    .carousel-inner {
+        width: 100%;
+        margin: auto;    
+    }
+    
+    .listaFooter {
+        display: none;
+    }
+
+    .serVicios {
+        grid-template-columns: 1fr;
+    }
+
+    #ubicacion {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .doNde {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+      .direCcion {
+        margin: auto;
+        height: 100%;
+        font-size: .5rem;
+        line-height: .1rem;
+    }
+
+    .loGos {
+        justify-content: center;
+    }
+
+    .logoface {
+        width: 57px;
+        height: auto;
+        left: .8rem;
+        position: relative;
+        top: 0.34rem;
+    }
+    
+    .logoig {
+        width: 37px;
+    }
+    
+    .logoli {
+        width: 36px;
+    }
+    
+    .logowhat {
+        width: 31px;
+    }
+
+    .col-sm-6 {
+        width: 40%;
+        height: auto;
+    }
+
+    .img-fluid {
+        width: auto;
+        height: auto;
+    }
+
+    .nosoTros {
+        width: 100%;
+
+    }
+
+    .deRecha h3 {
+        font-size: 1rem;
+        padding-bottom: .2rem;
+        padding-top: .4rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .izquIerda {
+        margin: 0%;
+    }
+
+    .izquIerda p {
+        display: flex;
+        font-size: .9rem;
+        margin-bottom: 0;
+    }
+
+    .textoNaranja {
+        font-size: 5rem;
+        margin: 0%;
+        line-height: 4.5rem;
+    }
+
+    .deRecha p {
+        font-size: .7rem;
+        margin-bottom: 0%;
+        line-height: normal;
+    }
+
+    footer {
+        display: grid;
+        width: 100%;
+        background: linear-gradient(#000000, #434343);
+        grid-template-columns: 1fr;
+        justify-items: center;               
+    }
+
+    .Dire {                  
+      padding-top: 2%;
+     font-size: .6rem;
+     color: white;
+     text-align: center;            
+   }
+
+    /*LISTA PRECIOS*/
+    .listaPrecios {
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+
+    table {
+        font-size: .5rem;
+        width: 70%;
+        border-collapse: separate;
+        border-spacing: .3rem;
+        text-align: center;
+        margin-bottom: 15%;
+        margin-top: 3%;
+    }
+
+    .tiTulo {
+        padding: 0.3rem;
+    }
+
+    .tiTulo th {
+        padding: 0.4rem;
+    }
+
+/* CONTACTO.HTML responsive*/
+.conTacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    line-height: 2rem;
+    color: white;
+}
+
+.consulta {
+    margin: auto;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+}
+.inPut { 
+   width: 90%;  
+}
+
+.archivo{
+    margin-bottom:5% ;
+}
+.texTarea {
+    width: 90%;
+}
+
+.tiPo input {
+    width: 50%;
+    }
+
+.form-select {
+    width: 50%;
+}
+}
+
+/*TAMAÑO TABLET*/
+@media only screen and (max-width:1024px) and (min-width: 721px) {
+    
+    .carousel-inner {
+        width: 80%;
+        margin: auto;    
+    }
+    
+    .carousel-item {
+        width: 100%;    
+    }
+    
+    .textoNaranja {
+        font-size: 6rem;
+    }
+
+    .nosoTros {
+        width: 80%;
+    }
+    .listaFooter {
+       display: none;
+    }
+
+    footer {
+        display: grid;
+        background: linear-gradient(to top, #000000, #434343);
+        color: white;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 12vh;
+       
+    }
+    .loGos {
+       display: flex;
+       margin: auto;
+       padding-right: 1.5rem;
+        
+    }
+    
+    .doNde {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 80%;
+    }
+
+    #ubicacion {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .direCcion {    
+    justify-items:right;
+    background: none;
+    padding-bottom: .8rem;
+    }
+    .Dire{
+        font-size: .9rem;        
+    }
+
+    /*LISTA PRECIOS*/
+    .listaPrecios {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+
+    table {
+        font-size: .5rem;
+        width: 70%;
+        border-collapse: separate;
+        border-spacing: .5rem;
+        text-align: center;
+        margin-bottom: 8%;
+        margin-top: 2%;
+    }
+
+    .tiTulo {
+        padding: 0.5rem;
+    }
+
+    .tiTulo th {
+        padding: 0.6rem;
+    }
+    /* CONTACTO.HTML responsive*/
+.conTacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 2%;
+    line-height: 2rem;
+    color: white;
+}
+
+.laBel{
+   width: 30% ;
+}
+.consulta {
+    margin: auto;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+}
+
+.inPut {
+    /* height: 108vh; */
+   width: 65%;  
+}
+
+.archivo{
+    width: 100%;
+    margin-bottom:5% ;
+}
+.texTarea {
+    width: 75%;
+}
+
+.tiPo input {
+    width: 60%;
+    }
+
+.form-select {
+    width: 50%;
+}
+
+/*SERVICIOS RESPONSIVE TABLETA*/
+.menuServicios {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+}
+
+.serVicios {
+    display: grid;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr  1fr 1fr;
+}
+.abajo {
+    display: grid;  
+}
+
+}
+
+/*---------------------------------------*/
+
+/*PRODUCTOS*/
+
+.proDucto {
+    margin: 5%;
+    list-style-type: none;
+    line-height: 3.5rem;
+}
+
+.proDucto li a {
+    color: white;
+}
+
+.seleccione {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    text-decoration: underline;
+    color: white;
+}
+
+.proDuctos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    border: solid 1px white;
+    border-radius: 3%;
+    background-image: linear-gradient(to top, #00000038, #43434367);
+}
+
+.proDuctos ol li {
+    display: flex;
+    margin-left: 25%;
+    padding-left: 8%;
+    background-image: url(../multimedia/iconito.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+/*TELEMANDOS.HTML*/
+
+.teleMandos {
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 0;
+}
+
+.border {
+    display: flex;
+    margin: .3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row {
+    margin: 1%;
+}
+
+.marCas {
+    margin: 5% auto;
+}
