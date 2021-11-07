@@ -1,5 +1,24 @@
 /*INDEX.HTML*/
 
+.dropdown-menu{
+    list-style:inside;
+    list-style-type: square;    
+    background-color: rgb(7, 7, 7);
+    width:max-content;    
+     word-spacing: normal;
+     padding: 10%;
+    
+    
+    
+    a{
+        color: white;
+        word-spacing:normal ;
+        font-size: 1rem;
+        
+    }
+    
+}
+
 .container_preguntas{
     position: fixed;
     z-index: 999;
@@ -9,14 +28,29 @@
     animation: efecto 1.2s infinite;
     border-radius: 3px;
 }
+.preGuntas_teXto{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    line-height: 6%;
+    padding-top: 5%;
+    
+}
 .container_preguntas:hover{
     transform: scale(1.1);
     transition: ease 1s;
 }
+
+
 .preGuntas_icono{
     width:70px;
     transition: 0.3s;    
 }
+.preGuntas_teXto{
+    color: #F16313;
+}
+ 
+
 @keyframes efecto{
     0%{
     box-shadow: 0 0 0 0 rgba(175, 117, 79, 0.747);

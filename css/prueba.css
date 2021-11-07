@@ -178,24 +178,24 @@ main {
 
 /* PRECIOS.HTML*/
 /*TABLA*/
-table td {
-  background-color: white;
-  color: green;
-  border-radius: 0.5rem; }
-
-.tiTulo {
+.tablita table .tiTulo {
   color: rgba(139, 91, 91, 0.884);
   font-weight: bold;
   background-color: snow;
   border-radius: 0.5rem;
   padding: 0.4rem; }
 
-.tiTulo th {
+.tablita table th {
   color: #fffdfd;
   background-color: black;
   font-weight: bold;
   border-radius: 1rem;
   padding: 0.7rem; }
+
+.tablita table td {
+  background-color: white;
+  color: green;
+  border-radius: 0.5rem; }
 
 .listaPrecios {
   text-decoration-line: underline;
@@ -283,51 +283,42 @@ table td {
   margin-top: 2%;
   line-height: 2rem;
   color: white; }
-
-.conTacto__tiTulo {
-  margin: auto;
-  padding-bottom: 1%;
-  font-size: 1.5rem; }
-
-.formUlario {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  font-size: 1.1rem;
-  margin: auto;
-  background: linear-gradient(to top, #0000003b, #4343437e);
-  border-radius: 1rem; }
-
-fieldset {
-  border-radius: 2rem; }
-
-.texTarea {
-  width: 90%;
-  line-height: 4rem;
-  border-radius: 0.5rem;
-  border: solid 2px black; }
-
-.formUlario__inFoContacto {
-  margin: auto;
-  padding: 5% 0; }
-
-.formUlario__inFoContacto input {
-  border-radius: 0.5rem;
-  margin: 0 0.3rem; }
-
-.form-select {
-  width: 45%;
-  height: 2rem;
-  margin: 2rem auto;
-  font-size: 0.9rem;
-  border-radius: 0.5rem; }
-
-.archivo {
-  margin-bottom: 2rem; }
-
-.btn-outline-warning {
-  margin-bottom: 3rem;
-  padding: 0.5em 1.5rem; }
+  .conTacto .conTacto__tiTulo {
+    margin: auto;
+    padding-bottom: 1%;
+    font-size: 1.5rem; }
+  .conTacto .formUlario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1.1rem;
+    margin: auto;
+    background: linear-gradient(to top, #0000003b, #4343437e);
+    border-radius: 1rem; }
+    .conTacto .formUlario fieldset {
+      border-radius: 2rem; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto {
+        margin: auto;
+        padding: 5% 0; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto input {
+          border-radius: 0.5rem;
+          margin: 0 0.3rem; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto .texTarea {
+          width: 90%;
+          line-height: 4rem;
+          border-radius: 0.5rem;
+          border: solid 2px #b15f1c; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto .form-select {
+          width: 45%;
+          height: 2rem;
+          margin: 2rem auto;
+          font-size: 0.9rem;
+          border-radius: 0.5rem; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto .archivo {
+          margin-bottom: 2rem; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto .btn-outline-warning {
+          margin-bottom: 3rem;
+          padding: 0.5em 1.5rem; }
 
 /*-------------------------*/
 /*SERVICIOS.HTML*/
@@ -397,22 +388,18 @@ fieldset {
         color: white; }
 
 /*TELEMANDOS.HTML*/
-.teleMandos {
-  display: flex;
-  justify-content: center;
-  padding-inline-end: 0; }
-
-.border {
-  display: flex;
-  margin: .3%;
-  align-items: center;
-  justify-content: center; }
-
-.row {
-  margin: 1%; }
-
 .marCas {
   margin: 5% auto; }
+  .marCas .teleMandos {
+    display: flex;
+    justify-content: center;
+    padding-inline-end: 0;
+    margin: 1%; }
+  .marCas .border {
+    display: flex;
+    margin: .3%;
+    align-items: center;
+    justify-content: center; }
 
 /*------------------*/
 /*TAMBOR.HTML*/
@@ -420,24 +407,22 @@ fieldset {
   display: flex;
   flex-direction: column;
   margin-bottom: 2%; }
-
-.secTion__taMbor__tiTulo--teXto {
-  color: white;
-  font-size: 1.3rem;
-  margin: 2% auto 1%; }
-
-.tiTulo__taMbor__imaGen {
-  width: 50%;
-  margin: auto; }
+  .secTion__taMbor .tiTulo__taMbor__imaGen {
+    width: 50%;
+    margin: auto; }
+  .secTion__taMbor .secTion__taMbor__tiTulo .secTion__taMbor__tiTulo--teXto {
+    color: white;
+    font-size: 1.3rem;
+    margin: 2% auto 1%; }
 
 /*LLAVES CODIFICADAS.HTML*/
-.tiTulo__coPias__imaGen {
+.secTion__coPias .tiTulo__coPias__imaGen {
   width: 50%; }
 
-.secTion__copPias__tiTulo--teXto {
+.secTion__coPias .secTion__copPias__tiTulo .secTion__copPias__tiTulo--teXto {
   color: white;
   font-size: 1.5rem;
-  padding-top: 2rem; }
+  padding-top: 2%; }
 
 /*CARCASAS.HTML*/
 .secTion__carCasas .tiTulo__carCasas__imaGen {
@@ -452,10 +437,10 @@ fieldset {
 .secTion__reMotos .tiTulo__reMotos__imaGen {
   width: 50%; }
 
-.secTion__reMotos .secTion__reMotos__tiTulo--blAnco {
+.secTion__reMotos .secTion__reMotos__tiTulo .secTion__reMotos__tiTulo--blAnco {
   color: white;
-  font-size: 1.3rem;
-  padding: 1% 0; }
+  font-size: 1.2rem;
+  margin-top: 1%; }
 
 /*ADAPTACION NAVAJA.HTML */
 .secTion__adapTaciones .secTion__adapTaciones__imaGen {
@@ -467,24 +452,36 @@ fieldset {
   font-size: 1.4rem; }
 
 /*PERDIO SUS LLAVES.HTML*/
-.secTion__ceroLlave__tiTulo--teXto {
+.secTion__ceroLlaves .tiTulo_ceroLlave__imaGen {
+  width: 55%; }
+
+.secTion__ceroLlaves .secTion__ceroLlave__tiTulo .secTion__ceroLlave__tiTulo--teXto {
   color: white;
   padding-top: 1%;
   font-size: 1.4rem; }
-
-.tiTulo_ceroLlave__imaGen {
-  width: 55%; }
 
 /*LEVANTAVIDRIOS.HTML*/
-.secTion__levantAvidrios__tiTulo--teXto {
+.secTion__levantAvidrios .tiTulo__levantAvidrios__imaGen {
+  width: 55%; }
+
+.secTion__levantAvidrios .secTion__levantAvidrios__tiTulo .secTion__levantAvidrios__tiTulo--teXto {
   color: white;
   padding-top: 1%;
   font-size: 1.4rem; }
 
-.tiTulo__levantAvidrios__imaGen {
-  width: 55%; }
-
 /*INDEX.HTML*/
+.dropdown-menu {
+  list-style: inside;
+  list-style-type: square;
+  background-color: #070707;
+  width: max-content;
+  word-spacing: normal;
+  padding: 10%; }
+  .dropdown-menu a {
+    color: white;
+    word-spacing: normal;
+    font-size: 1rem; }
+
 .container_preguntas {
   position: fixed;
   z-index: 999;
@@ -494,6 +491,13 @@ fieldset {
   animation: efecto 1.2s infinite;
   border-radius: 3px; }
 
+.preGuntas_teXto {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  line-height: 6%;
+  padding-top: 5%; }
+
 .container_preguntas:hover {
   transform: scale(1.1);
   transition: ease 1s; }
@@ -501,6 +505,9 @@ fieldset {
 .preGuntas_icono {
   width: 70px;
   transition: 0.3s; }
+
+.preGuntas_teXto {
+  color: #F16313; }
 
 @keyframes efecto {
   0% {
@@ -597,7 +604,7 @@ body {
   background-repeat: repeat; }
 
 /*MEDIA QUERY*/
-/* TAMAÑO DESDE IPHONE PLUS */
+/* TAMAÑO DESDE HASTA IPHONE PLUS 678 */
 /* TAMAÑO CELULAR*/
 @media only screen and (max-width: 414px) and (min-width: 320px) {
   .container_preguntas {
@@ -722,22 +729,25 @@ body {
     margin-top: 2%;
     line-height: 2rem;
     color: white; }
-  .conTacto__tiTulo {
-    margin: auto;
-    padding-bottom: 1%;
-    font-size: 1.5rem; }
-  .formUlario {
-    width: 90%; }
-  .archivo {
-    margin: auto;
-    margin-bottom: 5%;
-    width: 90%; }
-  .texTarea {
-    width: 90%; }
-  .formUlario__inFoContacto input {
-    width: 50%; }
-  .form-select {
-    width: 50%; }
+    .conTacto .conTacto__tiTulo {
+      margin: auto;
+      padding-bottom: 1%;
+      font-size: 1.5rem; }
+    .conTacto .formUlario {
+      width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto input {
+        width: 50%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .texTarea {
+        width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .form-select {
+        width: 50%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .archivo {
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .btn-outline-warning {
+        margin-bottom: .5rem;
+        padding: 0.5em 1rem; }
   /*PRODUCTOS HTML */
   .proDuctos {
     display: flex;
@@ -764,7 +774,6 @@ body {
     font-size: 1.1rem;
     color: white; }
   /*NOSOTROS HTML*/
-  /* @each $var in list {} */
   .NosoTros {
     width: 90%;
     margin-top: 5%; }
@@ -793,11 +802,11 @@ body {
     padding: 2% 0; }
   /*CONTROLES REMOTO*/
   .secTion__reMotos .tiTulo__reMotos__imaGen {
-    width: 90%;
-    padding-bottom: 2%; }
-  .secTion__reMotos .secTion__reMotos__tiTulo--blAnco {
+    width: 90%; }
+  .secTion__reMotos .secTion__reMotos__tiTulo .secTion__reMotos__tiTulo--blAnco {
     font-size: .9rem;
-    padding-bottom: 2%; }
+    padding: 1% 0;
+    font-size: .8rem; }
   /*ADAPTACION NAVAJA.HTML */
   .secTion__adapTaciones .secTion__adapTaciones__imaGen {
     width: 90%; }
@@ -806,50 +815,41 @@ body {
     font-size: 1rem;
     padding-bottom: 1rem; }
   /*PERDIO SUS LLAVES.HTML*/
-  .secTion__ceroLlave__tiTulo--teXto {
+  .secTion__ceroLlaves .tiTulo_ceroLlave__imaGen {
+    width: 90%;
+    margin-bottom: 8%; }
+  .secTion__ceroLlaves .secTion__ceroLlave__tiTulo .secTion__ceroLlave__tiTulo--teXto {
     padding-top: 5%;
     font-size: 1rem;
     padding-bottom: 2%; }
-  .tiTulo_ceroLlave__imaGen {
-    width: 90%;
-    margin-bottom: 8%; }
   /*LEVANTAVIDRIOS.HTML*/
-  .secTion__levantAvidrios__tiTulo--teXto {
-    padding-bottom: 2%;
-    padding-top: 5%;
-    font-size: 1rem; }
-  .tiTulo__levantAvidrios__imaGen {
+  .secTion__levantAvidrios .tiTulo__levantAvidrios__imaGen {
     width: 90%;
     margin-bottom: 8%; }
+  .secTion__levantAvidrios .secTion__levantAvidrios__tiTulo .secTion__levantAvidrios__tiTulo--teXto {
+    padding-bottom: 1%;
+    padding-top: 2%;
+    font-size: .8rem; }
   /*TAMBOR.HTML*/
-  .secTion__taMbor__tiTulo--teXto {
+  .secTion__taMbor .tiTulo__taMbor__imaGen {
+    width: 90%;
+    margin-bottom: 8%; }
+  .secTion__taMbor .secTion__taMbor__tiTulo .secTion__taMbor__tiTulo--teXto {
     font-size: 1rem;
     padding-bottom: 2%;
-    padding-top: 5%; }
-  .tiTulo__taMbor__imaGen {
-    width: 90%;
-    margin-bottom: 8%; } }
+    padding-top: 5%; } }
 
 /*-----------------------------------*/
 /* TAMAÑO CELULAR*/
-@media only screen and (max-width: 736px) and (min-width: 414px) {
+@media only screen and (max-width: 768px) and (min-width: 414px) {
   /*INDEX HTML*/
-  /* .caja1 {
-        width: 30%;
-
-        .loGo {
-            width: 80%;
-
-        }
-    } */
   .container_preguntas {
     display: none; }
   .caja1 {
     display: grid;
     height: auto;
-    width: 30%;
-    align-items: center;
-    margin-bottom: 0; }
+    width: auto;
+    align-items: center; }
   .loGo {
     display: grid;
     margin: auto;
@@ -966,22 +966,25 @@ body {
     margin-top: 2%;
     line-height: 2rem;
     color: white; }
-  .conTacto__tiTulo {
-    margin: auto;
-    padding-bottom: 1%;
-    font-size: 1.5rem; }
-  .formUlario {
-    width: 90%; }
-  .archivo {
-    margin: auto;
-    margin-bottom: 5%;
-    width: 90%; }
-  .texTarea {
-    width: 90%; }
-  .formUlario__inFoContacto input {
-    width: 50%; }
-  .form-select {
-    width: 50%; }
+    .conTacto .conTacto__tiTulo {
+      margin: auto;
+      padding-bottom: 1%;
+      font-size: 1.5rem; }
+    .conTacto .formUlario {
+      width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto input {
+        width: 50%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .texTarea {
+        width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .form-select {
+        width: 50%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .archivo {
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%; }
+      .conTacto .formUlario fieldset .formUlario__inFoContacto .btn-outline-warning {
+        margin-bottom: .5rem;
+        padding: 0.5em 1rem; }
   /*PRODUCTOS HTML */
   .proDuctos {
     display: flex;
@@ -1008,7 +1011,6 @@ body {
           font-size: 1.1rem;
           color: white; }
   /*NOSOTROS HTML*/
-  /* @each $var in list {} */
   .NosoTros {
     width: 90%;
     margin-top: 5%; }
@@ -1039,9 +1041,9 @@ body {
   .secTion__reMotos .tiTulo__reMotos__imaGen {
     width: 90%;
     padding-bottom: 2%; }
-  .secTion__reMotos .secTion__reMotos__tiTulo--blAnco {
+  .secTion__reMotos .secTion__reMotos__tiTulo .secTion__reMotos__tiTulo--blAnco {
     font-size: .9rem;
-    padding-bottom: 2%; }
+    padding-bottom: 1% 0; }
   /*ADAPTACION NAVAJA.HTML */
   .secTion__adapTaciones .secTion__adapTaciones__imaGen {
     width: 90%; }
@@ -1050,47 +1052,38 @@ body {
     font-size: 1rem;
     padding-bottom: 1rem; }
   /*PERDIO SUS LLAVES.HTML*/
-  .secTion__ceroLlave__tiTulo--teXto {
+  .secTion__ceroLlaves .tiTulo_ceroLlave__imaGen {
+    width: 90%;
+    margin-bottom: 8%; }
+  .secTion__ceroLlaves .secTion__ceroLlave__tiTulo .secTion__ceroLlave__tiTulo--teXto {
     padding-top: 5%;
     font-size: 1rem;
     padding-bottom: 2%; }
-  .tiTulo_ceroLlave__imaGen {
-    width: 90%;
-    margin-bottom: 8%; }
   /*LEVANTAVIDRIOS.HTML*/
-  .secTion__levantAvidrios__tiTulo--teXto {
-    padding-bottom: 2%;
-    padding-top: 5%;
-    font-size: 1rem; }
-  .tiTulo__levantAvidrios__imaGen {
+  .secTion__levantAvidrios .tiTulo__levantAvidrios__imaGen {
     width: 90%;
     margin-bottom: 8%; }
+  .secTion__levantAvidrios .secTion__levantAvidrios__tiTulo .secTion__levantAvidrios__tiTulo--teXto {
+    padding-top: 2%;
+    font-size: .9rem; }
   /*TAMBOR.HTML*/
-  .secTion__taMbor__tiTulo--teXto {
-    font-size: 1rem;
-    padding-bottom: 2%;
-    padding-top: 5%; }
-  .tiTulo__taMbor__imaGen {
+  .secTion__taMbor .tiTulo__taMbor__imaGen {
     width: 90%;
-    margin-bottom: 8%; } }
+    margin-bottom: 8%; }
+  .secTion__taMbor .secTion__taMbor__tiTulo .secTion__taMbor__tiTulo--teXto {
+    font-size: .8rem;
+    padding-bottom: 2%;
+    padding-top: 2%; } }
 
 /*---------------------------------------------------------------*/
 /*TAMAÑO TABLET*/
 @media only screen and (max-width: 1024px) and (min-width: 721px) {
   /*INDEX.HTML*/
-  /*  .caja1 {
-        width: 25%;
-
-        .loGo {
-            width: 70%;
-
-        }
-    } */
   .container_preguntas {
     display: none; }
   .caja1 {
     display: grid;
-    width: 25%; }
+    width: 30%; }
   .loGo {
     display: grid;
     margin: auto;
@@ -1162,23 +1155,29 @@ body {
     margin-top: 2%;
     line-height: 2rem;
     color: white; }
-  .laBel {
-    width: 30%; }
-  .conTacto__tiTulo {
-    margin: auto;
-    padding-bottom: 1%;
-    font-size: 1.5rem; }
-  .formUlario {
-    width: 65%; }
-  .archivo {
-    width: 100%;
-    margin-bottom: 5%; }
-  .texTarea {
-    width: 75%; }
-  .formUlario__inFoContacto input {
-    width: 60%; }
-  .form-select {
-    width: 50%; }
+    .conTacto .conTacto__tiTulo {
+      margin: auto;
+      padding-bottom: 1%;
+      font-size: 1.5rem; }
+    .conTacto .formUlario {
+      width: 65%; }
+      .conTacto .formUlario fieldset {
+        border-radius: 2rem; }
+        .conTacto .formUlario fieldset .formUlario__inFoContacto {
+          margin: auto;
+          padding: 5% 0; }
+          .conTacto .formUlario fieldset .formUlario__inFoContacto input {
+            width: 60%; }
+          .conTacto .formUlario fieldset .formUlario__inFoContacto .texTarea {
+            width: 75%; }
+          .conTacto .formUlario fieldset .formUlario__inFoContacto .form-select {
+            width: 50%; }
+          .conTacto .formUlario fieldset .formUlario__inFoContacto .archivo {
+            width: 100%;
+            margin-bottom: 5%; }
+          .conTacto .formUlario fieldset .formUlario__inFoContacto .btn-outline-warning {
+            margin-bottom: 3rem;
+            padding: 0.5em 1.5rem; }
   /*SERVICIOS RESPONSIVE TABLETA*/
   .menuServicios {
     display: grid;
@@ -1212,10 +1211,10 @@ body {
     letter-spacing: 0.1rem;
     line-height: 1.2rem; }
   /*LLAVES CODIFICADAS*/
-  .tiTulo__coPias__imaGen {
-    width: 85%;
-    margin-top: 2%;
-    margin-bottom: 2%; }
+  .secTion__coPias .tiTulo__coPias__imaGen {
+    width: 85%; }
+  .secTion__coPias .secTion__copPias__tiTulo .secTion__copPias__tiTulo--teXto {
+    font-size: 1.2rem; }
   /*CARCASAS*/
   .secTion__carCasas .tiTulo__carCasas__imaGen {
     width: 85%;
@@ -1227,10 +1226,9 @@ body {
   /*CONTROLES REMOTO*/
   .secTion__reMotos .tiTulo__reMotos__imaGen {
     width: 85%;
-    margin-bottom: 2%;
-    margin-top: 2%; }
-  .secTion__reMotos .secTion__reMotos__tiTulo--blAnco {
-    margin-top: 1%;
+    margin-bottom: 2%; }
+  .secTion__reMotos .secTion__reMotos__tiTulo .secTion__reMotos__tiTulo--blAnco {
+    margin: 1% 0;
     font-size: 1.2rem; }
   /*ADAPTACION NAVAJA.HTML */
   .secTion__adapTaciones .secTion__adapTaciones__imaGen {
@@ -1239,26 +1237,40 @@ body {
     padding-top: 1%;
     font-size: 1.2rem; }
   /*PERDIO SUS LLAVES.HTML*/
-  .secTion__ceroLlave__tiTulo--teXto {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 1.2rem; }
-  .tiTulo_ceroLlave__imaGen {
+  .secTion__ceroLlaves .tiTulo_ceroLlave__imaGen {
     width: 85%;
     margin-bottom: 5%; }
+  .secTion__ceroLlaves .secTion__ceroLlave__tiTulo .secTion__ceroLlave__tiTulo--teXto {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.1rem; }
   /*LEVANTAVIDRIOS.HTML*/
-  .secTion__levantAvidrios__tiTulo--teXto {
-    padding-bottom: 2%;
-    padding-top: 2%;
-    font-size: 1.2rem; }
-  .tiTulo__levantAvidrios__imaGen {
+  .secTion__levantAvidrios .tiTulo__levantAvidrios__imaGen {
     width: 85%;
     margin-bottom: 5%; }
+  .secTion__levantAvidrios .secTion__levantAvidrios__tiTulo .secTion__levantAvidrios__tiTulo--teXto {
+    padding-bottom: 1%;
+    padding-top: 1.5%;
+    font-size: 1.1rem; }
   /*TAMBOR.HTML*/
-  .secTion__taMbor__tiTulo--teXto {
-    font-size: 1.2rem;
-    padding-bottom: 2%;
-    padding-top: 2%; }
-  .tiTulo__taMbor__imaGen {
+  .secTion__taMbor .tiTulo__taMbor__imaGen {
     width: 85%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+  .secTion__taMbor .secTion__taMbor__tiTulo .secTion__taMbor__tiTulo--teXto {
+    font-size: 1.1rem;
+    padding-bottom: 2%;
+    padding-top: 2%; } }
+
+/*-----------------------------------*/
+/*TAMAÑO TABLET GRANDE*/
+@media only screen and (max-width: 1024px) and (min-width: 721px) {
+  /*INDEX.HTML*/
+  .naveGador {
+    width: 0%; }
+  .caja1 {
+    width: 22%;
+    margin-right: 0%; }
+  .loGo {
+    font-size: 2rem; }
+    .loGo .loGo2 {
+      font-size: .8rem; } }

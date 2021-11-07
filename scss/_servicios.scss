@@ -78,31 +78,30 @@
 
             a {
                 color: white;
-            }}}}
+            }
+        }
+    }
+}
 
 
 /*TELEMANDOS.HTML*/
 
-.teleMandos {
-    display: flex;
-    justify-content: center;
-    padding-inline-end: 0;
-}
-
-.border {
-    display: flex;
-    margin: .3%;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.row {
-    margin: 1%;
-}
-
 .marCas {
     margin: 5% auto;
+
+    .teleMandos {
+        display: flex;
+        justify-content: center;
+        padding-inline-end: 0;
+        margin: 1%;
+    }
+
+    .border {
+        display: flex;
+        margin: .3%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -114,94 +113,116 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
-}
 
-.secTion__taMbor__tiTulo--teXto {
-    color: white;
-    font-size: 1.3rem;
-    margin: 2% auto 1%;
+    .tiTulo__taMbor__imaGen {
+        width: 50%;
+        margin: auto;
+    }
 
-}
+    .secTion__taMbor__tiTulo {
 
-.tiTulo__taMbor__imaGen {
-    width: 50%;
-    margin: auto;
+        .secTion__taMbor__tiTulo--teXto {
+            color: white;
+            font-size: 1.3rem;
+            margin: 2% auto 1%;
+
+        }
+    }
 }
 
 /*LLAVES CODIFICADAS.HTML*/
 
+.secTion__coPias {
 .tiTulo__coPias__imaGen {
     width: 50%;
 }
-
-
+.secTion__copPias__tiTulo{
 .secTion__copPias__tiTulo--teXto {
     color: white;
     font-size: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 2%;
 }
-
+}}
 /*CARCASAS.HTML*/
 
-.secTion__carCasas{
-.tiTulo__carCasas__imaGen {
-        width: 50%;}    
-.secTion__carCasas__tiTulo{
+.secTion__carCasas {
+    .tiTulo__carCasas__imaGen {
+        width: 50%;
+    }
 
-.secTion__carCasas__tiTulo--blAnco {
-    color: white;
-    font-size: 1.3rem;
-    padding: 1% 0;}
+    .secTion__carCasas__tiTulo {
 
-}}
+        .secTion__carCasas__tiTulo--blAnco {
+            color: white;
+            font-size: 1.3rem;
+            padding: 1% 0;
+        }
+
+    }
+}
 
 /*CONTROLES REMOTO*/
 
-.secTion__reMotos{
+.secTion__reMotos {
+    
     .tiTulo__reMotos__imaGen {
         width: 50%;
-}
-.secTion__reMotos__tiTulo--blAnco {
-    color: white;
-    font-size: 1.3rem;
-    padding: 1% 0;
+    }
+    
+.secTion__reMotos__tiTulo{
+    .secTion__reMotos__tiTulo--blAnco {
+        color: white;
+        font-size: 1.2rem;
+        margin-top: 1%;
+    }
 }}
 
 /*ADAPTACION NAVAJA.HTML */
 
-.secTion__adapTaciones{
+.secTion__adapTaciones {
     .secTion__adapTaciones__imaGen {
-        width: 55%;}
-.secTion__adapTaciones__tiTulo--teXto {
-    color: white;
-    padding-top: 1%;
-    font-size: 1.4rem;
-}}
+        width: 55%;
+    }
+
+    .secTion__adapTaciones__tiTulo--teXto {
+        color: white;
+        padding-top: 1%;
+        font-size: 1.4rem;
+    }
+}
 
 
 
 
 /*PERDIO SUS LLAVES.HTML*/
 
-.secTion__ceroLlave__tiTulo--teXto {
-    color: white;
-    padding-top: 1%;
-    font-size: 1.4rem;
-}
+.secTion__ceroLlaves {
+    .tiTulo_ceroLlave__imaGen {
+        width: 55%
+    }
 
-.tiTulo_ceroLlave__imaGen {
-    width: 55%
-}
+    .secTion__ceroLlave__tiTulo {
+        .secTion__ceroLlave__tiTulo--teXto {
+            color: white;
+            padding-top: 1%;
+            font-size: 1.4rem;
+        }
 
+
+    }
+}
 
 /*LEVANTAVIDRIOS.HTML*/
+
+.secTion__levantAvidrios{
+    .tiTulo__levantAvidrios__imaGen {
+        width: 55%
+    }
+    .secTion__levantAvidrios__tiTulo{
 
 .secTion__levantAvidrios__tiTulo--teXto {
     color: white;
     padding-top: 1%;
     font-size: 1.4rem;
 }
-
-.tiTulo__levantAvidrios__imaGen {
-    width: 55%
-}
+    }}

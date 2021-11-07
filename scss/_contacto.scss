@@ -7,7 +7,6 @@
     margin-top: 2%;
     line-height: 2rem;
     color: white;
-}
 
 .conTacto__tiTulo {
     margin: auto;
@@ -23,27 +22,25 @@
     margin: auto;
     background: linear-gradient(to top, #0000003b, #4343437e);
     border-radius: 1rem;
-}
+
 
 fieldset {
     border-radius: 2rem;
-}
+
+    .formUlario__inFoContacto {
+        margin: auto;
+        padding: 5% 0;
+    
+    input {
+        border-radius: 0.5rem;
+        margin: 0 0.3rem;
+    }
 
 .texTarea {
     width: 90%;
     line-height: 4rem;
     border-radius: 0.5rem;
-    border: solid 2px rgb(0, 0, 0);
-}
-
-.formUlario__inFoContacto {
-    margin: auto;
-    padding: 5% 0;
-}
-
-.formUlario__inFoContacto input {
-    border-radius: 0.5rem;
-    margin: 0 0.3rem;
+    border: solid 2px rgb(177, 95, 28);
 }
 
 .form-select {
@@ -61,4 +58,4 @@ fieldset {
 .btn-outline-warning {
     margin-bottom: 3rem;
     padding: 0.5em 1.5rem;
-}
+}}}}}
