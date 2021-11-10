@@ -4,7 +4,7 @@
     display: grid;
     height: 100%;
     justify-content: center;
-}
+
 
 .serVicios {
     margin-top: 5%;
@@ -15,29 +15,30 @@
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 0.1rem;
     grid-column-gap: 0.1rem;
-}
 
-.serVicios div {
+div {
     display: grid;
     align-items: end;
     position: relative;
-}
+    &a {
+        display: grid;
+        position: relative;
+    }
+    .abajo {
+        display: grid;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.699);
+        position: absolute;
+        padding: 1rem 0;
+        font-weight: 400;
+        font-family:$fuente;
+        font-size: 1rem;
+        margin: 0;
+    }}
+}}
 
-.serVicios a {
-    display: grid;
-    position: relative;
-}
 
-.abajo {
-    display: grid;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.699);
-    position: absolute;
-    padding: 1rem 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.1rem;
-    margin: 0;
-}
+
 
 
 
@@ -78,6 +79,7 @@
 
             a {
                 color: white;
+                word-spacing: .2rem;
             }
         }
     }

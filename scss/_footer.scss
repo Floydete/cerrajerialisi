@@ -6,8 +6,47 @@ footer {
     color: white;
     grid-template-columns: 1fr 2fr 1fr;
 
+.loGos {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    article {
+        display: flex;
+        align-items: center;
+        padding-right: 6%;
+    }
 
+.logoface {
+    width: 72px;
+    height: auto;
+    left: 0.9rem;
+    position: relative;
+    top: 0.36rem;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
+
+.logoig {
+    width: 46px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.logoli {
+    width: 46px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.logowhat {
+    width: 39px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}}
 
 .direCcion {
     width: 100%;
@@ -17,77 +56,25 @@ footer {
     margin-top: 3%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.103);
-}
 
 .Dire {
     align-items: center;
     line-height: .65rem;
     margin: auto;
     font-size: 1.1rem;
-}
+}}
 
 .listaFooter {
     display: grid;
     line-height: 1.1rem;
     justify-content: center;
     margin-top: .9rem;
-
-}
-
-.listaFooter a {
-    font-size: .8rem;
-    color: rgb(201, 148, 14);
-    letter-spacing: .2rem;
-}
-
-.listaFooter a:hover {
-    color: papayawhip;
-}
-
-.loGos {
-    display: flex;
-    width: 85%;
-    justify-content: center;
-}
-
-.loGos article {
-    display: flex;
-    align-items: center;
-    padding-right: 6%;
-}
-
-.logoface:hover {
-    transform: scale(1.1);
-}
-
-.logoig:hover {
-    transform: scale(1.1);
-}
-
-.logoli:hover {
-    transform: scale(1.1);
-}
-
-.logowhat:hover {
-    transform: scale(1.1);
-}
-
-.logoface {
-    width: 72px;
-    height: auto;
-    left: 0.9rem;
-    position: relative;
-    top: 0.36rem;
-}
-
-.logoig {
-    width: 46px;
-}
-
-.logoli {
-    width: 46px;
-}
-
-.logowhat {
-    width: 39px;
-}
+    a {
+        font-size: .8rem;
+        color: rgb(201, 148, 14);
+        letter-spacing: .2rem;
+        &:hover {
+            color: papayawhip;
+        }
+    }
+}}

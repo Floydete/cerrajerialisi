@@ -1,11 +1,4 @@
-.faDe {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-delay: .4s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
+/*EFECTO DELAY NAVEGADOR*/
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -16,60 +9,6 @@
     }
 }
 
-header {
-    position: sticky;
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.colorNav {
-    background-image: linear-gradient(to bottom, #ff4b1f, #f57a4e);
-    }
-
-.navbar-light .navbar-nav .nav-link.active {
-    color: white;
-}
-
-.navbar-light .navbar-nav .nav-link.active:hover {
-    color: #F7931E;
-}
-
-
-.caja1 {
-    display: grid;
-     width: 15%;
-     margin-right: 5%; 
-    /* justify-items: center;
-    justify-content: center;
-    align-items: center; */
-    grid-template-columns: 4fr;
-    grid-template-rows: auto auto;  
-    text-align: center;
-    animation: stretch;
-    animation-duration: 1.5s;
-    animation-duration: 3s;
-    
-}
-
-.loGo {
-    display: grid;
-    margin: auto;
-    font-size: 2.4rem ;
-    color: rgba(255, 255, 255, 0.767);    
-    font-family: 'Playball', cursive; }
- 
-.loGo2{
-    display: grid;
-    color: rgba(255, 255, 255, 0.795);    
-    font-size: .9rem;
-    line-height: .4rem;
-    text-decoration:overline;
-    
-    
-    }
-
 /*EFECTO LOGO*/
 @keyframes stretch {
     0% {
@@ -78,35 +17,7 @@ header {
 
     100% {
         transform: scale(1)
-            }
-}
-
-.naveGador li {
-    margin-left: 2.6%;
-}
-
-.suBmenu li:hover {
-    color: rgba(236, 212, 76, 0.829);
-    background-color: rgb(37, 36, 36);
-    border-radius: 0.4rem;
-}
-
-.suBmenu {
-    position: absolute;
-    display: none;
-}
-
-.suBmenu li {
-    display: block;
-    background-color: rgba(128, 128, 128, 151);
-    padding: 0.6rem 0.6rem;
-    color: honeydew;
-    font-size: 0.9rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.naveGador li:hover ul {
-    display: block;
+    }
 }
 
 a {
@@ -115,10 +26,101 @@ a {
     word-spacing: 1rem;
 }
 
-/*MAIN*/
-main {
-    text-align: center;
-    font-size: 0.9rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
+
+header {
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .colorNav {
+        background-image: linear-gradient(to bottom, #ff4b1f, #f57a4e);
+    }
+
+    .caja1 {
+        display: grid;
+        width: 15%;
+        margin-right: 5%;
+        grid-template-columns: 4fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        animation: stretch;
+        animation-duration: 1.5s;
+        animation-duration: 3s;
+
+        .loGo {
+            display: grid;
+            margin: auto;
+            font-size: 2.4rem;
+            color: rgba(255, 255, 255, 0.767);
+            font-family: 'Playball', cursive;
+        }
+
+        .loGo2 {
+            display: grid;
+            color: rgba(255, 255, 255, 0.795);
+            font-size: .9rem;
+            line-height: .4rem;
+            text-decoration: overline;
+        }
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+
+        color: white;
+
+        &:hover {
+            color: #ffcc92}
+
+            &.active {
+                color: #ffcc92;
+                 
+            }
+        }
+
+
+
+    
+
+
+    .faDe {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-delay: .4s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .naveGador {
+        li {
+            margin-left: 2.6%;
+
+            &:hover ul {
+                display: block;
+
+
+            }
+        }
+    }
+
+    .suBmenu {
+        position: absolute;
+        display: none;
+
+        li {
+            display: block;
+            background-color: rgba(88, 87, 87, 0.849);
+            padding: 0.6rem 0.6rem;
+            color: honeydew;
+            font-size: 0.9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            &:hover {
+                color: rgba(236, 212, 76, 0.829);
+                background-color: rgb(37, 36, 36);
+                border-radius: 0.2rem;
+            }
+        }
+    }
 }
