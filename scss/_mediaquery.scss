@@ -1,6 +1,5 @@
 /*MEDIA QUERY*/
 
-
 /* TAMAÑO CELULAR*/
 
 /* TAMAÑO HASTA IPHONE PLUS 678 */
@@ -36,6 +35,11 @@
         }
     }
 
+    
+
+       
+    
+
     .carousel-inner {
         width: 100%;
         margin: auto;
@@ -45,9 +49,49 @@
 
     .menuServicios {
         .serVicios {
+            
             grid-template-columns: 1fr;
         }
     }
+
+    .menuServicios2 {
+        display: grid;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+        margin-top: 0;
+    
+    
+    .serVicios2 {
+        display: grid;
+        margin-top: 0;
+       
+        width: 100%;       
+        grid-template-columns: 2fr 2fr;  
+                grid-row-gap: 0.05rem;
+        grid-column-gap: 0.05rem;
+    
+    div {
+        display: grid;
+        width: 100%;    
+        align-items: end;
+        position: relative;
+        margin: auto;
+        &a {
+           
+            display: grid;
+            position: relative;
+        }
+        img{
+            width: 100%;
+        }
+        .abajo2 {
+            display: grid;        
+            width: 100%;            
+            font-size: .8rem;
+            
+        }}
+    }}
 
 
     .googleMaps {
@@ -59,7 +103,7 @@
 
     .googleMaps .doNde {
         width: 100%;
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
 
@@ -103,7 +147,7 @@
 
             .Dire {
                 padding-top: 2%;
-                font-size: .6rem;
+                font-size: .65rem;
                 color: white;
                 text-align: center;
             }
@@ -192,17 +236,14 @@
 /*LISTA PRECIOS*/
 
 .listaPrecios {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-top: 5%;
 }
 
 .tablita {
-    display: flex;
-    justify-content: center;
-
-    table {
+     table {
         font-size: .5rem;
-        width: 70%;
+        width: 97%;
         border-collapse: separate;
         border-spacing: .3rem;
         text-align: center;
@@ -210,12 +251,15 @@
         margin-top: 3%;
 
         .tiTulo {
-            padding: 0.3rem;
+            padding: 0.3rem;}
 
             th {
-                padding: 0.4rem;
-            }
-        }
+                padding: 0.4rem;}
+                td{
+                    font-size: .5rem;
+                }
+            
+        
     }
 }
 
@@ -306,7 +350,7 @@ li {
     padding-left: 15%;}
 
 a {
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: white;
 }}}
 
@@ -482,15 +526,13 @@ a {
 
             .loGo {
                 display: grid;
-                margin: auto;
                 font-size: 1.5rem;
-                color: white;
+                
             }
 
 
             .loGo2 {
                 display: grid;
-                color: white;
                 font-size: .6rem;
                 text-decoration: overline
             }
@@ -508,6 +550,44 @@ a {
             grid-template-columns: 1fr;
         }
     }
+    .menuServicios2 {
+        display: grid;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+        margin-top: 0;
+    
+    
+    .serVicios2 {
+        display: grid;
+        margin-top: 0;
+       
+        width: 100%;       
+        grid-template-columns: 2fr 2fr;  
+                grid-row-gap: 0.05rem;
+        grid-column-gap: 0.05rem;
+    
+    div {
+        display: grid;
+        width: 100%;    
+        align-items: end;
+        position: relative;
+        margin: auto;
+        &a {
+           
+            display: grid;
+            position: relative;
+        }
+        img{
+            width: 100%;
+        }
+        .abajo2 {
+            display: grid;        
+            width: 100%;
+            font-size: .9rem;
+            
+        }}
+    }}
 
 
     .googleMaps {
@@ -518,7 +598,7 @@ a {
 
         .doNde {
             width: 100%;
-            font-size: .8rem;
+            font-size: .9rem;
         }
     }
 
@@ -584,6 +664,7 @@ a {
         justify-items: center;
 
         .loGos {
+            margin-top: 1%;
             justify-content: center;
 
             .logoface {
@@ -611,11 +692,11 @@ a {
             margin: auto;
             height: 100%;
             font-size: .5rem;
-            line-height: .1rem;
+            
 
             .Dire {
                 padding-top: 2%;
-                font-size: .6rem;
+                font-size: .7rem;
                 color: white;
                 text-align: center;
             }
@@ -643,13 +724,10 @@ a {
 
 
 
-
-
-
     /*LISTA PRECIOS*/
 
     .listaPrecios {
-        font-size: 1rem;
+        font-size: .8rem;
         margin-top: 5%;
     }
 
@@ -659,7 +737,7 @@ a {
 
         table {
             font-size: .5rem;
-            width: 70%;
+            width: 90%;
             border-collapse: separate;
             border-spacing: .3rem;
             text-align: center;
@@ -667,14 +745,18 @@ a {
             margin-top: 3%;
 
             .tiTulo {
-                padding: 0.3rem;
+                padding: 0.3rem;}
 
 
                 th {
                     padding: 0.4rem;
+                    font-size: .6rem;
+                }
+                td{
+                    font-size: .6rem;
                 }
             }
-        }
+        
     }
 
 
@@ -922,7 +1004,7 @@ a {
 
 /*TAMAÑO TABLET*/
 
-@media only screen and (max-width:1024px) and (min-width: 721px) {
+@media only screen and (max-width:1024px) and (min-width: 768px) {
 
     /*INDEX.HTML*/
 
@@ -931,7 +1013,8 @@ a {
         display: none;
     }
 
-    .header {
+    header {
+        
         .caja1 {
             display: grid;
             width: 30%;
@@ -939,16 +1022,16 @@ a {
 
             .loGo {
                 display: grid;
-                margin: auto;
-                font-size: 2rem;
+               
+                font-size: 1.9rem;
                 color: white;
             }
 
 
             .loGo2 {
                 display: grid;
-                color: white;
-                font-size: .7rem;
+                color: rgb(255, 255, 255);
+                font-size: .9rem;
                 text-decoration: overline;
                 line-height: .5rem;
             }
@@ -1024,32 +1107,35 @@ a {
 
     /*LISTA PRECIOS*/
     .listaPrecios {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 2%;
-    }
+        
+        }
 
     .tablita {
         display: flex;
         justify-content: center;
-
         table {
             font-size: .5rem;
-            width: 70%;
+            width: 85%;
             border-collapse: separate;
             border-spacing: .5rem;
             text-align: center;
-            margin-bottom: 8%;
+            margin-bottom: 20%;
             margin-top: 2%;
 
             .tiTulo {
-                padding: 0.5rem;
+                padding: 0.5rem;}
 
                 th {
                     padding: 0.6rem;
+                    font-size: .9rem;
+                }
+                td{
+                    font-size: .9rem;
                 }
             }
-        }
-    }
+         }
 
     /* CONTACTO.HTML*/
     .conTacto {
@@ -1122,6 +1208,22 @@ a {
         }
     }
 
+    .menuServicios2 {
+        display: grid;
+        height: 100%;
+        justify-content: center;
+
+        .serVicios2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+
+            .abajo2 {
+                display: grid;
+                
+            }
+        }
+    }
     /*PRODUCTOS HTML */
 
     .proDuctos {
@@ -1298,7 +1400,7 @@ a {
 /*-----------------------------------*/
 /*TAMAÑO TABLET GRANDE*/
 
-@media only screen and (max-width:1024px) and (min-width: 721px) {
+@media only screen and (max-width:1440px) and (min-width: 992px) {
 
     /*INDEX.HTML*/
 
@@ -1309,16 +1411,16 @@ a {
 
     header {
         .caja1 {
-            width: 22%;
+            width: 20%;
             margin-right: 0%;
 
             .loGo {
-                font-size: 2rem;
+                font-size: 1.8em;
             }
 
             .loGo2 {
 
-                font-size: .8rem;
+                font-size: .7rem;
 
             }
         }
@@ -1326,19 +1428,10 @@ a {
 
 
 
-    .cartaNegra {
-        width: 80%;
-
-        .cartaNegra__sectorIzquierdo {
-            .cartaNegra__sectorIzquierdo__aÑo {
-                font-size: 7rem;
-            }
-        }
-    }
+ 
 
 
-    .NosoTros {
-        width: 80%;
+    .NosoTros {        
         margin-top: 5%;
 
         .NosoTros__hisToria{

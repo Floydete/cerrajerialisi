@@ -131,7 +131,7 @@ header {
     position: absolute;
     display: none; }
     header .suBmenu li {
-      display: block;
+      display: none;
       background-color: rgba(88, 87, 87, 0.849);
       padding: 0.6rem 0.6rem;
       color: honeydew;
@@ -141,51 +141,50 @@ header {
         color: rgba(236, 212, 76, 0.829);
         background-color: #252424;
         border-radius: 0.2rem; }
+  header .navbar-toggler {
+    color: white; }
 
 /* PRECIOS.HTML*/
 /*TABLA*/
-.tablita table .tiTulo {
-  color: rgba(139, 91, 91, 0.884);
-  font-weight: bold;
-  background-color: snow;
-  border-radius: 0.5rem;
-  padding: 0.4rem; }
-
-.tablita table th {
-  color: #fffdfd;
-  background-color: black;
-  font-weight: bold;
-  border-radius: 1rem;
-  padding: 0.7rem; }
-
-.tablita table td {
-  background-color: white;
-  color: green;
-  border-radius: 0.5rem; }
-
-.listaPrecios {
-  text-decoration-line: underline;
-  font-size: 1.5rem;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: rgba(255, 255, 255, 0.89);
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-
 .tablita {
   display: flex;
   justify-content: center; }
   .tablita table {
-    width: 40%;
+    width: 65%;
     text-align: center;
     background-color: rgba(255, 245, 191, 0.233);
     border-radius: 1.5rem;
     color: #141414;
     font-weight: bold;
     border: solid 2px rgba(134, 132, 21, 0.795);
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     border-collapse: separate;
     border-spacing: .8rem; }
+    .tablita table .tiTulo {
+      color: rgba(139, 91, 91, 0.884);
+      font-weight: bold;
+      background-color: snow;
+      border-radius: 0.5rem;
+      padding: 0.4rem; }
+    .tablita table th {
+      color: #fffdfd;
+      background-color: black;
+      font-weight: bold;
+      border-radius: 1rem;
+      padding: 0.7rem; }
+    .tablita table td {
+      background-color: white;
+      color: green;
+      border-radius: 0.5rem; }
+
+.listaPrecios {
+  text-decoration-line: underline;
+  font-size: 1.5rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: rgba(255, 255, 255, 0.89);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 /*NOSOTROS.HTML*/
 .NosoTros {
@@ -201,7 +200,10 @@ header {
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: " foto1 foto1 foto1" " video video video " " foto2 foto3 foto4 " "historia historia historia"; }
+  grid-template-areas: " foto1 foto1 foto1"
+ " video video video "
+ " foto2 foto3 foto4 "
+ "historia historia historia"; }
   .NosoTros .NosoTros__foTo1 {
     grid-area: foto1;
     border-radius: 1rem; }
@@ -305,18 +307,62 @@ header {
       display: grid;
       align-items: end;
       position: relative; }
+      .menuServicios .serVicios div:hover {
+        transform: scale(1.01);
+        opacity: 85%; }
       .menuServicios .serVicios diva {
         display: grid;
         position: relative; }
+        .menuServicios .serVicios diva img:hover {
+          opacity: 85%; }
       .menuServicios .serVicios div .abajo {
         display: grid;
         color: white;
         background-color: rgba(0, 0, 0, 0.699);
         position: absolute;
+        padding: .8rem 0;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0; }
+
+/*TELEMANDOS POR MODELO*/
+.menuServicios2 {
+  display: grid;
+  height: 100%;
+  justify-content: center; }
+  .menuServicios2 .serVicios2 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: grid;
+    width: 70%;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0.05rem;
+    grid-column-gap: 0.05rem; }
+    .menuServicios2 .serVicios2 div {
+      display: grid;
+      align-items: end;
+      position: relative; }
+      .menuServicios2 .serVicios2 div:hover {
+        opacity: 85%;
+        transform: scale(1.01); }
+      .menuServicios2 .serVicios2 diva {
+        display: grid;
+        position: relative; }
+        .menuServicios2 .serVicios2 diva img:hover {
+          opacity: 85%; }
+      .menuServicios2 .serVicios2 div .abajo2 {
+        display: grid;
+        width: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.801);
+        position: absolute;
         padding: 1rem 0;
         font-weight: 400;
-        font-family: sans-serif;
-        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
         margin: 0; }
 
 /*---------------------------------------*/
@@ -364,6 +410,9 @@ header {
     margin: .3%;
     align-items: center;
     justify-content: center; }
+    .marCas .border:hover {
+      opacity: 60%;
+      transform: scale(1.01); }
 
 /*------------------*/
 /*TAMBOR.HTML*/
@@ -601,12 +650,40 @@ body {
     margin: auto; }
   .menuServicios .serVicios {
     grid-template-columns: 1fr; }
+  .menuServicios2 {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 0; }
+    .menuServicios2 .serVicios2 {
+      display: grid;
+      margin-top: 0;
+      width: 100%;
+      grid-template-columns: 2fr 2fr;
+      grid-row-gap: 0.05rem;
+      grid-column-gap: 0.05rem; }
+      .menuServicios2 .serVicios2 div {
+        display: grid;
+        width: 100%;
+        align-items: end;
+        position: relative;
+        margin: auto; }
+        .menuServicios2 .serVicios2 diva {
+          display: grid;
+          position: relative; }
+        .menuServicios2 .serVicios2 div img {
+          width: 100%; }
+        .menuServicios2 .serVicios2 div .abajo2 {
+          display: grid;
+          width: 100%;
+          font-size: .8rem; }
   .googleMaps #ubicacion {
     width: 100%;
     height: 30vh; }
   .googleMaps .doNde {
     width: 100%;
-    font-size: .8rem; }
+    font-size: .9rem; }
   footer {
     display: grid;
     width: 100%;
@@ -634,7 +711,7 @@ body {
       line-height: .1rem; }
       footer .direCcion .Dire {
         padding-top: 2%;
-        font-size: .6rem;
+        font-size: .65rem;
         color: white;
         text-align: center; }
     footer .listaFooter {
@@ -683,23 +760,22 @@ body {
         line-height: .5rem; }
   /*LISTA PRECIOS*/
   .listaPrecios {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-top: 5%; }
-  .tablita {
-    display: flex;
-    justify-content: center; }
-    .tablita table {
-      font-size: .5rem;
-      width: 70%;
-      border-collapse: separate;
-      border-spacing: .3rem;
-      text-align: center;
-      margin-bottom: 15%;
-      margin-top: 3%; }
-      .tablita table .tiTulo {
-        padding: 0.3rem; }
-        .tablita table .tiTulo th {
-          padding: 0.4rem; }
+  .tablita table {
+    font-size: .5rem;
+    width: 97%;
+    border-collapse: separate;
+    border-spacing: .3rem;
+    text-align: center;
+    margin-bottom: 15%;
+    margin-top: 3%; }
+    .tablita table .tiTulo {
+      padding: 0.3rem; }
+    .tablita table th {
+      padding: 0.4rem; }
+    .tablita table td {
+      font-size: .5rem; }
   /* CONTACTO.HTML responsive*/
   .conTacto {
     display: flex;
@@ -749,7 +825,7 @@ body {
         margin-left: 8%;
         padding-left: 15%; }
       .proDuctos .proDuctos__galeRia a {
-        font-size: 1.1rem;
+        font-size: .9rem;
         color: white; }
   /*NOSOTROS HTML*/
   .NosoTros {
@@ -830,12 +906,9 @@ body {
     align-items: center; }
     header .caja1 .loGo {
       display: grid;
-      margin: auto;
-      font-size: 1.5rem;
-      color: white; }
+      font-size: 1.5rem; }
     header .caja1 .loGo2 {
       display: grid;
-      color: white;
       font-size: .6rem;
       text-decoration: overline; }
   .carousel-inner {
@@ -843,12 +916,40 @@ body {
     margin: auto; }
   .menuServicios .serVicios {
     grid-template-columns: 1fr; }
+  .menuServicios2 {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 0; }
+    .menuServicios2 .serVicios2 {
+      display: grid;
+      margin-top: 0;
+      width: 100%;
+      grid-template-columns: 2fr 2fr;
+      grid-row-gap: 0.05rem;
+      grid-column-gap: 0.05rem; }
+      .menuServicios2 .serVicios2 div {
+        display: grid;
+        width: 100%;
+        align-items: end;
+        position: relative;
+        margin: auto; }
+        .menuServicios2 .serVicios2 diva {
+          display: grid;
+          position: relative; }
+        .menuServicios2 .serVicios2 div img {
+          width: 100%; }
+        .menuServicios2 .serVicios2 div .abajo2 {
+          display: grid;
+          width: 100%;
+          font-size: .9rem; }
   .googleMaps #ubicacion {
     width: 100%;
     height: 30vh; }
   .googleMaps .doNde {
     width: 100%;
-    font-size: .8rem; }
+    font-size: .9rem; }
   .cartaNegra {
     width: 100%; }
     .cartaNegra .cartaNegra__sectorIzquierdo p {
@@ -887,6 +988,7 @@ body {
     grid-template-columns: 1fr;
     justify-items: center; }
     footer .loGos {
+      margin-top: 1%;
       justify-content: center; }
       footer .loGos .logoface {
         width: 57px;
@@ -903,11 +1005,10 @@ body {
     footer .direCcion {
       margin: auto;
       height: 100%;
-      font-size: .5rem;
-      line-height: .1rem; }
+      font-size: .5rem; }
       footer .direCcion .Dire {
         padding-top: 2%;
-        font-size: .6rem;
+        font-size: .7rem;
         color: white;
         text-align: center; }
     footer .listaFooter {
@@ -921,14 +1022,14 @@ body {
     height: auto; }
   /*LISTA PRECIOS*/
   .listaPrecios {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-top: 5%; }
   .tablita {
     display: flex;
     justify-content: center; }
     .tablita table {
       font-size: .5rem;
-      width: 70%;
+      width: 90%;
       border-collapse: separate;
       border-spacing: .3rem;
       text-align: center;
@@ -936,8 +1037,11 @@ body {
       margin-top: 3%; }
       .tablita table .tiTulo {
         padding: 0.3rem; }
-        .tablita table .tiTulo th {
-          padding: 0.4rem; }
+      .tablita table th {
+        padding: 0.4rem;
+        font-size: .6rem; }
+      .tablita table td {
+        font-size: .6rem; }
   /* CONTACTO.HTML responsive*/
   .conTacto {
     display: flex;
@@ -1056,22 +1160,21 @@ body {
 
 /*---------------------------------------------------------------*/
 /*TAMAÑO TABLET*/
-@media only screen and (max-width: 1024px) and (min-width: 721px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   /*INDEX.HTML*/
   .container_preguntas {
     display: none; }
-  .header .caja1 {
+  header .caja1 {
     display: grid;
     width: 30%; }
-    .header .caja1 .loGo {
+    header .caja1 .loGo {
       display: grid;
-      margin: auto;
-      font-size: 2rem;
+      font-size: 1.9rem;
       color: white; }
-    .header .caja1 .loGo2 {
+    header .caja1 .loGo2 {
       display: grid;
       color: white;
-      font-size: .7rem;
+      font-size: .9rem;
       text-decoration: overline;
       line-height: .5rem; }
   .carousel-inner {
@@ -1109,23 +1212,26 @@ body {
       display: none; }
   /*LISTA PRECIOS*/
   .listaPrecios {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 2%; }
   .tablita {
     display: flex;
     justify-content: center; }
     .tablita table {
       font-size: .5rem;
-      width: 70%;
+      width: 85%;
       border-collapse: separate;
       border-spacing: .5rem;
       text-align: center;
-      margin-bottom: 8%;
+      margin-bottom: 20%;
       margin-top: 2%; }
       .tablita table .tiTulo {
         padding: 0.5rem; }
-        .tablita table .tiTulo th {
-          padding: 0.6rem; }
+      .tablita table th {
+        padding: 0.6rem;
+        font-size: .9rem; }
+      .tablita table td {
+        font-size: .9rem; }
   /* CONTACTO.HTML*/
   .conTacto {
     display: flex;
@@ -1167,6 +1273,16 @@ body {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr 1fr 1fr; }
       .menuServicios .serVicios .abajo {
+        display: grid; }
+  .menuServicios2 {
+    display: grid;
+    height: 100%;
+    justify-content: center; }
+    .menuServicios2 .serVicios2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr 1fr; }
+      .menuServicios2 .serVicios2 .abajo2 {
         display: grid; }
   /*PRODUCTOS HTML */
   .proDuctos {
@@ -1253,23 +1369,18 @@ body {
 
 /*-----------------------------------*/
 /*TAMAÑO TABLET GRANDE*/
-@media only screen and (max-width: 1024px) and (min-width: 721px) {
+@media only screen and (max-width: 1440px) and (min-width: 992px) {
   /*INDEX.HTML*/
   .naveGador {
     width: 0%; }
   header .caja1 {
-    width: 22%;
+    width: 20%;
     margin-right: 0%; }
     header .caja1 .loGo {
-      font-size: 2rem; }
+      font-size: 1.8em; }
     header .caja1 .loGo2 {
-      font-size: .8rem; }
-  .cartaNegra {
-    width: 80%; }
-    .cartaNegra .cartaNegra__sectorIzquierdo .cartaNegra__sectorIzquierdo__aÑo {
-      font-size: 7rem; }
+      font-size: .7rem; }
   .NosoTros {
-    width: 80%;
     margin-top: 5%; }
     .NosoTros .NosoTros__hisToria h3 {
       font-size: .9rem;
